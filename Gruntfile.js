@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
   // load injector and bower install
+  grunt.loadNpmTasks('grunt-serve');
   grunt.loadNpmTasks('grunt-injector');
   grunt.loadNpmTasks('grunt-bower-install');
 
@@ -35,11 +36,19 @@ module.exports = function(grunt) {
         ignorePath: '',
         overrides: {}
       }
+    },
+
+    serve: {
+        options: {
+            port: 9000,
+            path: './app'
+        }
     }
+
   });
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  // // Load the plugin that provides the "uglify" task.
+  // grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
   grunt.registerTask('default', ['bowerInstall','injector']);

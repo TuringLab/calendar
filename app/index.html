@@ -9,31 +9,27 @@
     <!-- injector:css -->
     <!-- endinjector -->
 </head>
-<body>
+<body ng-app='turingCalendar'>
 
-    <div id='content'>
-      <h1>Events</h1>
-      <ul id='events'></ul>
-    </div>
-    <a href='#' id='hello' onclick='newCalendarEvent();'>Create</a>
-    <a href='#' id='authorize-button' onclick='handleAuthClick();'>Login</a>
-    
-    <div id='calendar'></div>
+    <div ng-view></div>
 
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/moment/moment.js"></script>
     <script src="../bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
 
     <!-- injector:js -->
-    <script src="/app/calendar/calendar.js"></script>
-    <script src="/app/calendar/login.js"></script>
-    <script src="/app/index.js"></script>
+    <script src="/app/app.module.js"></script>
+    <script src="/app/app.routes.js"></script>
+    <script src="/app/calendar/calendar.controller.js"></script>
     <!-- endinjector -->
 
     <script src="../bower_components/fullcalendar/dist/gcal.js"></script>
-    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 
 </body>
 </html>

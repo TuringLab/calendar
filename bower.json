@@ -4,7 +4,7 @@
   "authors": [
     "Henry Miskin <henry.miskin@talktalk.net>"
   ],
-  "main" : [
+  "main": [
     "app/index.js"
   ],
   "description": "Turing calendar allows eventbooking to be made online",
@@ -20,6 +20,9 @@
     "tests"
   ],
   "dependencies": {
-    "fullcalendar": "~2.3.2"
+    "fullcalendar": "~2.3.2",
+    "angular-ui-calendar": "~1.0.1",
+    "angular-bootstrap": "~0.13.0",
+    "angular-route": "~1.4.2"
   }
 }
