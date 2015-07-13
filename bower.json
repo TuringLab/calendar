@@ -1,0 +1,25 @@
+{
+  "name": "turing-calendar",
+  "version": "0.1.0",
+  "authors": [
+    "Henry Miskin <henry.miskin@talktalk.net>"
+  ],
+  "main" : [
+    "app/index.js"
+  ],
+  "description": "Turing calendar allows eventbooking to be made online",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullcalendar": "~2.3.2"
+  }
+}

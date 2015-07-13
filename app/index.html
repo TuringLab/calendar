@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Turing Calendar</title>
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/fullcalendar/dist/fullcalendar.css" />
+    <!-- endbower -->
+
+    <!-- injector:css -->
+    <!-- endinjector -->
+</head>
+<body>
+
+    <div id='content'>
+      <h1>Events</h1>
+      <ul id='events'></ul>
+    </div>
+    <a href='#' id='hello' onclick='newCalendarEvent();'>Create</a>
+    <a href='#' id='authorize-button' onclick='handleAuthClick();'>Login</a>
+    
+    <div id='calendar'></div>
+
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <!-- endbower -->
+
+    <!-- injector:js -->
+    <script src="/app/calendar/calendar.js"></script>
+    <script src="/app/calendar/login.js"></script>
+    <script src="/app/index.js"></script>
+    <!-- endinjector -->
+
+    <script src="../bower_components/fullcalendar/dist/gcal.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+</body>
+</html>
