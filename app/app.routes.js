@@ -3,8 +3,8 @@ angular.module('turingCalendar')
     .config(function($routeProvider){
         $routeProvider
             .when('/', {
-                templateUrl : 'calendar/calendar.html',
-                controller: 'CalendarController'
+                templateUrl : 'schedule/schedule.html',
+                controller: 'ScheduleController'
             })
             .otherwise({
                 redirectTo : '/'
