@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       options: {},
       local_dependencies: {
         files: {
-          'app/index.html': ['app/**/*.js', 'app/**/*.css'],
+          'index.html': ['app/**/*.js', 'app/**/*.css'],
         }
       }
     },
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         // Point to the files that should be updated when 
         // you run `grunt bower-install` 
         src: [
-          'app/index.html'   // .html support... 
+          'index.html'   // .html support... 
         ],
      
         // Optional: 
@@ -40,8 +40,7 @@ module.exports = function(grunt) {
 
     serve: {
         options: {
-            port: 9000,
-            path: './app'
+            port: 9000
         }
     }
 

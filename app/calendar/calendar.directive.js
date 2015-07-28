@@ -4,7 +4,7 @@ function calendar(){
 
     return {
         restrict: 'AE',
-        templateUrl: './calendar/calendar.html',
+        templateUrl: 'app/calendar/calendar.html',
         link : function (scope, element, attrs, controllers){
           $(document).ready(function() {
             console.log(element);
