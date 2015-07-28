@@ -9,7 +9,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     injector: {
-      options: {},
+      options: {
+        addRootSlash: false,
+      },
       local_dependencies: {
         files: {
           'index.html': ['app/**/*.js', 'app/**/*.css'],
@@ -28,7 +30,7 @@ module.exports = function(grunt) {
      
         // Optional: 
         // --------- 
-        cwd: '',
+        cwd: '.',
         dependencies: true,
         devDependencies: false,
         exclude: [],
